@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="mijares.css">
+    <script src="myScript.js"></script>
+</head>
+<body onload="check_login()">
+    <div class="form-popup" id="myForm">
+        <div class="inicio_de_Sesion_page , form-container">
+            <div class="close_icon" onclick="closeForm()">x</div>
+            <img class="inicio_de_Sesion_header_logo" src="imagen_P1/logo.png" alt="logo">
+            <div class="inicio_de_Sesion_header_text"><h3>CENTRO AUGUSTO MIJARES</h3></div>
+            <div class="inicio_de_Sesion_login_text"><h4>Iniciar Sesion</h4></div>
+            <form >
+                <div class="inicio_de_Sesion_username , padding_textbox ">
+                    <input type="text" id="username" class="round_border , textbox_width" name="username" placeholder="Nombre de Usuario o Correo">
+                </div>
+                <div class="inicio_de_Sesion_password , padding_textbox">
+                    <input type="password" id="password" class="round_border , textbox_width" name="password" placeholder="Contrasena">
+                </div>
+                <div class="inicio_de_Sesion_submit , padding_textbox">
+                    <input type="submit" value="Entrar" class="submit_btn , btn_width" onclick="validate_cred()" >
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="front_page">
+        <div class="page_header">
+            <!--<div class="header-logo">-->
+            <img class="page_header_logo" src="imagen_P1/logo.png" alt="logo">
+            
+            <div class="page_navigator"> 
+                <ul class="page_navigation_list">
+                    <li><a href="Inicio.html" class="Inicio">Inicio</a></li>
+                    <li><a href="Semblanza.html" class="Semblanza">Semblanza</a></li>
+                    <li><a href="centro_augusto_mijares.html" >Centro Augusto Mijares</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="Eventos.html">Eventos</a></li>
+                    <li><a href="Videos.html">Videos</a></li>
+                    <li><a href="Equipo.html">Equipos</a></li>
+                    <li><a href="#" class="open-button" onclick="openForm()" >Inicio de Session</a></li>
+                    <li><a href="registro.html" class="active_page">Registro</a></li>
+                    <li><a href="user_page.html"  id="user_tab">User Profile</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="registro_page">
+            <div class="top_container">
+                <div class="registro_page_top_logo">
+                    <img  src="imagen_P1/logo.png" alt="logo">
+                </div>
+                <div class="registro_page_top_text"><h3>Registro</h3></div>
+            </div>
+
+            <div class="middle_container">
+                <div class="left_container">
+                    <div class="top_textbox">
+                        <div class="registro_username , inline_block , padding">
+                            <input type="text" id="username" class="round_border" name="username" placeholder="Registro">
+                        </div>
+                        <div class="registro_mail , inline_block  , padding">
+                            <input type="text" id="mail" class="round_border" name="mail" placeholder="Correo">
+                        </div>
+                    </div>
+                    <div class="middle_textbox">
+                        <div class="registro_password , inline_block  , padding">
+                            <input type="text" id="password" class="round_border" name="password" placeholder="Contrasena">
+                        </div>
+                        <div class="registro_repassword , inline_block  , padding">
+                            <input type="text" id="repassword" class="round_border" name="repassword" placeholder="Repeter Contrasena">
+                        </div>
+                    </div>
+                    <div class="registro_address  , padding">
+                        <input type="text" id="address" class="registro_address_textbox , round_border" name="address" placeholder="Direccion">
+                    </div>
+                    <div class="registro_submit  , padding">
+                        <input type="submit" value="Guardar" class="submit_btn , btn_width">
+                    </div>                    
+                </div>
+                <div class="right_container">
+                    <div class="registro_page_right_logo">
+                        <img  src="imagen_P1/logo.png" alt="logo">
+                    </div>
+                    <div class="registro_page_right_text"><h2>CENTRO AUGUSTO MIJARES</h2></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page_footer">
+        <div class="page_footer_text">
+            <hr >
+            <div>Copyright ©2020 All rights reserved | This template is made with<span style="color:#6059f6"> &hearts;</span>	by<span style="color:#6059f6"> DiazApps</span></div>
+        </div>
+        <div class="page_footer_image">
+            <div class="page_footer_image_facebook">
+                <img src="imagen_P1/facebook.png">
+            </div>
+            <div class="page_footer_image_twitter">
+                <img src="imagen_P1/twitter.png"> 
+            </div>
+            <div class="page_footer_image_global">
+                <img src="imagen_P1/global.png">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="mijares.css">
+    <script src="myScript.js"></script>
+</head>
+<body onload="check_login()">
+    <div class="form-popup" id="myForm">
+        <div class="inicio_de_Sesion_page , form-container">
+            <div class="close_icon" onclick="closeForm()">x</div>
+            <img class="inicio_de_Sesion_header_logo" src="imagen_P1/logo.png" alt="logo">
+            <div class="inicio_de_Sesion_header_text"><h3>CENTRO AUGUSTO MIJARES</h3></div>
+            <div class="inicio_de_Sesion_login_text"><h4>Iniciar Sesion</h4></div>
+            <form >
+                <div class="inicio_de_Sesion_username , padding_textbox ">
+                    <input type="text" id="username" class="round_border , textbox_width" name="username" placeholder="Nombre de Usuario o Correo">
+                </div>
+                <div class="inicio_de_Sesion_password , padding_textbox">
+                    <input type="password" id="password" class="round_border , textbox_width" name="password" placeholder="Contrasena">
+                </div>
+                <div class="inicio_de_Sesion_submit , padding_textbox">
+                    <input type="submit" value="Entrar" class="submit_btn , btn_width" onclick="validate_cred()" >
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="front_page">
+        <div class="page_header">
+            <!--<div class="header-logo">-->
+            <img class="page_header_logo" src="imagen_P1/logo.png" alt="logo">
+            
+            <div class="page_navigator" > 
+                <ul class="page_navigation_list" >
+                    <li><a href="Inicio.html" class="Inicio">Inicio</a></li>
+                    <li><a href="Semblanza.html" class="Semblanza , active_page">Semblanza</a></li>
+                    <li><a href="centro_augusto_mijares.html" >Centro Augusto Mijares</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="Eventos.html">Eventos</a></li>
+                    <li><a href="Videos.html">Videos</a></li>
+                    <li><a href="Equipo.html">Equipos</a></li>
+                    <li><a href="#" class="open-button" onclick="openForm()" >Inicio de Session</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="user_page.html"  id="user_tab" >User Profile</a></li>
+                </ul>
+            </div>
+        </div>
+
+    
+
+        <div class="semblanza_top_container"><br>
+            <div class="section_right">     
+                <div class="section_right_text">
+                    <p><strong>Augusto Mijares</strong> nació en Villa de Cura (estado Anzoátegui) el 12 de noviembre de 1987, pero desde muy joven se residenció en la ciudad de Caracas. Se graduó de Abogado en la Universidad Central de Venezuela (UCV) en 1921 y también de Profesor en Geografía e Historia el año 1938.
+                        <br>
+                        De las dos carreras en la que se tituló, Mijares mostró predilección por la de docente, inicándose como maestro de aula a los dicisiete años. En este quehacer no solo se destacó por su práctica pedagógica, sino también por sus aportes en las reformas de los programas de enseñanza, creación de las escuelas y los cargos meritorios que ocupó en el sistema educativo, siendo de gran reconocimiento su participación como Ministro de Educación en 1948.
+                        <br>
+                        Este insigne educador, también fue un escritor destacado. En 1964 escribió su obra El Libertador, considerada una de las mejores bioigrafías sobre Simón Bolívar.
+                        <br>
+                        Augusto Mijares, hoy día, sigue inspirando a muchos profesionales, especialmente a docentes, que ejerciendo los valores de la "justicia, el bien, la belleza y la verdad", apuestn por un aprendizaje que contribuya a potenciar las capacidades del estudiante y el docente, en plena sintonía con las necesidades y características socio-culturales de la sociedad donde tiene lugar el hecho esducativo.
+                    </p>
+                </div>   
+            </div>
+
+            <div class="section_left"> 
+                <div class="section_left_image">
+                    <img src="imagen_P1/Augusto_Mijares.jpg">
+                </div>
+            </div> 
+        </div>
+            <br><br><br><br>
+        <div class="semblanza_bottom_container">
+            <div class="section_right">
+                <div class="section_right_display">
+                <div class="section_right_display_heading">
+                    <h3>APORTES PEDAGÓICOS DE AUGUSTO MIJARES</h3>
+                </div>  
+                <div class="section_right_display_heading_text">
+                    <ol type="1">
+                        <li>Formación en valores para construir el futuro del país.</li><br>
+                        <li>Para formar en valores es necesario llegar a la dimensión “afectiva” del ser humano.</li><br>
+                        <li>Educar en virtudes e integrar la afectividad y la razón.</li><br>
+                        <li>La educación moral es una educación sentimental, actuar virtuosamente es actuar desde una inclinación formada por el cultivo de las virtudes cívicas como la constancia y la probidad.</li><br>
+                        <li>Integrar lo afirmativo venezolano en la educación.</li><br>
+                    </ol> 
+                </div><br><br><br><br><br><br>
+                </div>
+            </div>
+
+            <div class="section_left">
+                <div class="section_left_display"><br>
+                <div class="section_left_heading"><br>
+                    <h3>Obras</h3><br>
+                </div>
+                <div class="section_left_heading_text">
+                    <p>Augusto Mijares fue considerado como uno de los ensayistas más destacados del siglo XXI. Esta ha sido su obra:</p>
+                        <div class=section_left_heading_text_list>
+                        <ul style="list-style-type:none;">  
+                        <li>1.La patria de los venezolanos (1750)</li><br>
+                        <li>2.La interpretación pesimista de la sociología hispanoamericana(1938)</li><br>
+                        <li>3.Hombres e ideas de América (1940)</li><br>
+                        <li>4.Educación (1943)</li><br>
+                        <li>5.La luz y el espejo (1955)</li><br>
+                        <li>6.La ideología de revolución emancipadora (1961)</li><br>
+                        <li>7.Lo afirmativo venezolano (1963)</li><br>
+                        <li>8.El Libertador ( 1964)</li><br>
+                        <li>9.La evolución política de Venezuela (1967)</li><br>
+                        <li>10.Longitud y latitud (1971)</li><br>
+                        </ul>
+                       </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div> 
+
+    <div class="page_footer">
+        <div class="page_footer_text">
+            <hr >
+            <div>Copyright ©2020 All rights reserved | This template is made with<span style="color:#6059f6"> &hearts;</span>	by<span style="color:#6059f6"> DiazApps</span></div>
+        </div>
+        <div class="page_footer_image">
+            <div class="page_footer_image_facebook">
+                <img src="imagen_P1/facebook.png">
+            </div>
+            <div class="page_footer_image_twitter">
+                <img src="imagen_P1/twitter.png"> 
+            </div>
+            <div class="page_footer_image_global">
+                <img src="imagen_P1/global.png">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

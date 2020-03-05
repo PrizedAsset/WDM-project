@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="mijares.css">
+    <script src="myScript.js"></script>
+</head>
+<body onload="check_login()">
+    <div class="form-popup" id="myForm">
+        <div class="inicio_de_Sesion_page , form-container">
+            <div class="close_icon" onclick="closeForm()">x</div>
+            <img class="inicio_de_Sesion_header_logo" src="imagen_P1/logo.png" alt="logo">
+            <div class="inicio_de_Sesion_header_text"><h3>CENTRO AUGUSTO MIJARES</h3></div>
+            <div class="inicio_de_Sesion_login_text"><h4>Iniciar Sesion</h4></div>
+            <form >
+                <div class="inicio_de_Sesion_username , padding_textbox ">
+                    <input type="text" id="username" class="round_border , textbox_width" name="username" placeholder="Nombre de Usuario o Correo">
+                </div>
+                <div class="inicio_de_Sesion_password , padding_textbox">
+                    <input type="password" id="password" class="round_border , textbox_width" name="password" placeholder="Contrasena">
+                </div>
+                <div class="inicio_de_Sesion_submit , padding_textbox">
+                    <input type="submit" value="Entrar" class="submit_btn , btn_width" onclick="validate_cred()" >
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="front_page">
+        <div class="page_header">
+            <!--<div class="header-logo">-->
+            <img class="page_header_logo" src="imagen_P1/logo.png" alt="logo">
+            
+            <div class="page_navigator" > 
+                <ul class="page_navigation_list" >
+                    <li><a href="Inicio.html" class="Inicio">Inicio</a></li>
+                    <li><a href="semblanza.html" class="Semblanza">Semblanza</a></li>
+                    <li><a href="centro_augusto_mijares.html" >Centro Augusto Mijares</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="Eventos.html">Eventos</a></li>
+                    <li><a href="Videos.html" class="active_page">Videos</a></li>
+                    <li><a href="Equipo.html">Equipos</a></li>
+                    <li><a href="#" class="open-button" onclick="openForm()" >Inicio de Session</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="user_page.html"  id="user_tab" >User Profile</a></li>
+                </ul>
+            </div>
+        </div>
+    
+
+        <div class="video_page">
+            <div class="video_header">
+                <div class="video_header_image">
+                    <img src="imagen_P1/logo.png" alt="logo">
+                </div>
+                <div class="video_header_text">
+                    <h4>UN ESPACIO PARA DEBATIR A PARTIR DEL VÍDEO</h4>
+                </div>
+            </div>
+
+        <div class="videos">
+            <div class="videos_a">
+                <div class="videos_a_src">
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/44E6zSpaDwE"> 
+                    </iframe>
+                </div>    
+                <div class="videos_a_heading">
+                    <h4>Dr. François Vallaeys</h4>
+                </div>  
+                <div class="videos_a_heading_text">
+                    <p>La Responsabilidad Social por François Vallaeys | Universidad Siglo 21 URL: https://www.youtube.com/embed/44E6zSpaDwE</p>
+                </div>
+            </div>
+            <div class="videos_b">
+                <div class="videos_b_src">
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/do9dIcEIiwU"> 
+                    </iframe>
+                </div>    
+                <div class="videos_b_heading">
+                    <h4>Dr. François Vallaeys</h4>
+                </div>  
+                <div class="videos_b_heading_text">
+                    <p>Panorama de la RSO en América Latina (SIRSO 2014)III SIMPOSIO DE LA RESPONSABILIDAD SOCIAL DE LAS ORGANIZACIONES URL: https://www.youtube.com/embed/do9dIcEIiwU</p>
+                </div>
+            </div>
+            <div class="videos_c">
+                <div class="videos_c_src">
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/h4juTFzNYcs"> 
+                    </iframe>
+                </div>    
+                <div class="videos_c_heading">
+                    <h4>UNIVERSIDAD DEL PACÍFICO</h4>
+                </div>  
+                <div class="videos_c_heading_text">
+                    <p>CONFERENCIA: Responsabilidad Socialersitaria como modelo universitario para América Latina URL: https://www.youtube.com/embed/h4juTFzNYcs</p>
+                </div>
+            </div>
+            <div class="videos_d">
+                <div class="videos_d_src">
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/W7y83cZ_s7g"> 
+                    </iframe>
+                </div>    
+                <div class="videos_d_heading">
+                    <h4>Dr. François Vallaeys</h4>
+                </div>  
+                <div class="videos_d_heading_text">
+                    <p>Conferencia: CALIDAD EDUCATIVA Y RESPONSABILIDAD SOCIAL -Congreso Internacional de Calidad Educativa URL: https://www.youtube.com/embed/W7y83cZ_s7g</p>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </div>
+
+    <div class="page_footer">
+        <div class="page_footer_text">
+            <hr >
+            <div>Copyright ©2020 All rights reserved | This template is made with<span style="color:#6059f6"> &hearts;</span>	by<span style="color:#6059f6"> DiazApps</span></div>
+        </div>
+        <div class="page_footer_image">
+            <div class="page_footer_image_facebook">
+                <img src="imagen_P1/facebook.png">
+            </div>
+            <div class="page_footer_image_twitter">
+                <img src="imagen_P1/twitter.png"> 
+            </div>
+            <div class="page_footer_image_global">
+                <img src="imagen_P1/global.png">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

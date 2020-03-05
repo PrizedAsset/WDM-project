@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="mijares.css">
+    <script src="myScript.js"></script>
+
+</head>
+<body onload="check_login()">
+    <div class="form-popup" id="myForm">
+        <div class="inicio_de_Sesion_page , form-container">
+            <div class="close_icon" onclick="closeForm()">x</div>
+            <img class="inicio_de_Sesion_header_logo" src="imagen_P1/logo.png" alt="logo">
+            <div class="inicio_de_Sesion_header_text"><h3>CENTRO AUGUSTO MIJARES</h3></div>
+            <div class="inicio_de_Sesion_login_text"><h4>Iniciar Sesion</h4></div>
+            <form >
+                <div class="inicio_de_Sesion_username , padding_textbox ">
+                    <input type="text" id="username" class="round_border , textbox_width" name="username" placeholder="Nombre de Usuario o Correo">
+                </div>
+                <div class="inicio_de_Sesion_password , padding_textbox">
+                    <input type="password" id="password" class="round_border , textbox_width" name="password" placeholder="Contrasena">
+                </div>
+                <div class="inicio_de_Sesion_submit , padding_textbox">
+                    <input type="submit" value="Entrar" class="submit_btn , btn_width" onclick="validate_cred()" >
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="front_page">
+        <div class="page_header">
+            <!--<div class="header-logo">-->
+            <img class="page_header_logo" src="imagen_P1/logo.png" alt="logo">
+            
+            <div class="page_navigator"> 
+                <ul class="page_navigation_list">
+                    <li><a href="Inicio.html" class="Inicio , active_page">Inicio</a></li>
+                    <li><a href="Semblanza.html" class="Semblanza">Semblanza</a></li>
+                    <li><a href="centro_augusto_mijares.html" >Centro Augusto Mijares</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="Eventos.html">Eventos</a></li>
+                    <li><a href="Videos.html">Videos</a></li>
+                    <li><a href="Equipo.html">Equipos</a></li>
+                    <li><a href="#" class="open-button" onclick="openForm()" >Inicio de Session</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="user_page.html"  id="user_tab" class="hidden_tab">User Profile</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    <div class="top_container">
+        <div class="inicio_section_a">     
+            <div class="inicio_section_a_image">
+                <img src="imagen_P1/logo.png" alt="image">
+            </div>
+            <div class="inicio_section_a_mainheading">
+                <h1>CENTRO AUGUSTO MIJARES</h1>
+            </div>
+            <div class="inicio_section_a_subheading">  
+                <h2>DESARROLLO HUMANO SUSTENTABLE</h2>  
+            </div>    
+        </div>
+
+        <div class="inicio_section_b"> 
+            <div class="inicio_section_b_heading">
+                <h2>BIENVENIDA</h2>
+            </div>
+            <div class="inicio_section_b_heading_text">
+                <p>Bienvenidos a este espacio del Centro Augusto Mijares, Asociación Civil sin fines de lucro centrada en el tema de la Responsabilidad Social, con énfasis en la realidad venezolana. En esta página encontrarás información alusiva al epónimo, Augusto Mijares, su trayectoria profesional, sus aportes en el campo específico de la educación y sus obras. También podrás conocer sobre el Centro: misión, valores, líneas de trabajo, proyectos en ejecución y actividades realizadas. Además, esta página web cuenta con enlaces directos para comunicarte vía mensajería con los integrantes del Centro, buscar información sobre temas específicos, acceder a una lista de blogs sobre la responsabilidad social y ubicar otras instituciones interesadas por el tema de la responsabilidad social. Con esta página web, esperamos unirnos al grupo de personas que, tanto en Venezuela como en otras partes del mundo, están aportando sus ideas en pro de un desarrollo humano sustentable.</p>
+            </div>
+            
+        </div> 
+    </div>
+
+    <div class="middle_container">
+        <div class="inicio_section_c">
+            <div class="inicio_section_c_image">
+                <img src="imagen_P1/logo.png">
+            </div>
+            <div class="inicio_section_c_heading">
+                <h2>PROPÓSITO</h2>
+            </div>
+            <div class="inicio_section_c_text">
+                <p>El Centro Augusto Mijares está conformado por un grupo de profesionales que asesoran en la ejecución de proyecto enmarcados en el tema de la Responsabilidad Social - Desarrollo Humano Sustentable. Actualmente, no cuenta con una página web para la difusión de su labor y producción. De allí que haya optado por colaborar con esta institución, elaborando este espacio web que funcionará como medio de interacción con el público en general. Concretamente, el propósito es dar respuesta a esta carencia que afecta el establecimiento de una comunicación más efectiva, en atención a la incidencia que, actualmente, tienen las TIC en todos los ámbitos de las relaciones humanas. Además, se espera que este medio constituya un enlace para establecer alianzas y generar, de manera colaborativa, nuevas propuestas para la elaboración de futuros proyectos en ámbitos diversos, como el ambiente, el turismo, la gerencia empresarial, la educación universitaria, entre otros.</p>
+            </div>
+        </div>
+    </div>
+
+</div> 
+</div>
+
+<div class="bottom_container">
+    <div class="inicio_section_d">
+        <div class="inicio_section_d_video">
+            <iframe width="700" height="300" src="https://www.youtube.com/embed/Kcl-T98Wtvo"> 
+            </iframe>
+        </div>
+        
+        <div class="inicio_section_d_content">
+            <div class="inicio_section_d_heading">
+                <h2>OBJETIVOS</h2>
+            </div>
+            <div class="inicio_section_d_text">
+                <ol><ol type="1">
+                <li> Funcionar como punto de información en el tema de la Responsabilidad Social.</li>
+                <li> Establecer alianzas en línea para la realización de actividades en por del desarrollo humano ustentable.</li>
+                <li> Dar a conocer los trabajos realizados, en el campo de la Responsabilidad Social - Desarrollo Sustentable, por los miembros del Centro Augusto Mijares y otras personas interesadas en el tema.</li>
+                <li> Funcionar como un centro de información para la reflexión sobre el tema de la Responsabilidad Social.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="page_footer">
+        <div class="page_footer_text">
+            <hr >
+            <div>Copyright ©2020 All rights reserved | This template is made with<span style="color:#6059f6"> &hearts;</span>	by<span style="color:#6059f6"> DiazApps</span></div>
+        </div>
+        <div class="page_footer_image">
+            <div class="page_footer_image_facebook">
+                <img src="imagen_P1/facebook.png">
+            </div>
+            <div class="page_footer_image_twitter">
+                <img src="imagen_P1/twitter.png"> 
+            </div>
+            <div class="page_footer_image_global">
+                <img src="imagen_P1/global.png">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

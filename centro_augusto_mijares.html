@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="mijares.css">
+    <script src="myScript.js"></script>
+
+</head>
+<body onload="check_login()">
+    <div class="form-popup" id="myForm">
+        <div class="inicio_de_Sesion_page , form-container">
+            <div class="close_icon" onclick="closeForm()">x</div>
+            <img class="inicio_de_Sesion_header_logo" src="imagen_P1/logo.png" alt="logo">
+            <div class="inicio_de_Sesion_header_text"><h3>CENTRO AUGUSTO MIJARES</h3></div>
+            <div class="inicio_de_Sesion_login_text"><h4>Iniciar Sesion</h4></div>
+            <form >
+                <div class="inicio_de_Sesion_username , padding_textbox ">
+                    <input type="text" id="username" class="round_border , textbox_width" name="username" placeholder="Nombre de Usuario o Correo">
+                </div>
+                <div class="inicio_de_Sesion_password , padding_textbox">
+                    <input type="password" id="password" class="round_border , textbox_width" name="password" placeholder="Contrasena">
+                </div>
+                <div class="inicio_de_Sesion_submit , padding_textbox">
+                    <input type="submit" value="Entrar" class="submit_btn , btn_width" onclick="validate_cred()" >
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="front_page">
+        <div class="page_header">
+            <!--<div class="header-logo">-->
+            <img class="page_header_logo" src="imagen_P1/logo.png" alt="logo">
+            
+            <div class="page_navigator" > 
+                <ul class="page_navigation_list" >
+                    <li><a href="Inicio.html" class="Inicio">Inicio</a></li>
+                    <li><a href="semblanza.html" class="Semblanza">Semblanza</a></li>
+                    <li><a href="centro_augusto_mijares.html" class="active_page">Centro Augusto Mijares</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="Eventos.html">Eventos</a></li>
+                    <li><a href="Videos.html">Videos</a></li>
+                    <li><a href="Equipo.html">Equipos</a></li>
+                    <li><a href="#" class="open-button" onclick="openForm()" >Inicio de Session</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="user_page.html"  id="user_tab" >User Profile</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="centro_augusto_mijares_page">
+            <div class="top_container">
+                <div class="mision_container">
+                    <div class="mision_header"><h1>MISIÓN</h1></div>
+                    <div class="mision_text"><p>El CENTRO AUGUSTO MIJARES es una asociación civil sin fines de lucro que contribuye con el desarrollo humano, mediante la generación y difusión de información, la formación extraescolar, promoviendo educación de calidad, asistencia técnica para mejorar el desempeño de organizaciones y el impulso de iniciativas de responsabilidad social y voluntariado, con el propósito de lograr la formación de capital social y el desarrollo sustentable de la comunidad.</p></div>
+                </div>
+                <div class="vision_container">
+                    <div class="vision_header"><h1>VISIÓN</h1></div>
+                    <div class="vision_text"><p>El CENTRO AUGUSTO MIJARES aspira ser reconocido, a nivel nacional, como una organización de excelencia, comprometida con el desarrollo sustentable de la comunidad.</p></div>
+                </div>
+            </div>
+            <div  class="middle_container">
+                <div class="valores_container">
+                    <div class="valores_img">
+                        <img  src="imagen_P1/logo.png" alt="valores_logo_img">      
+                    </div>
+                    <div class="valores_header"><h2>VALORES</h2></div>
+                    <div class="valores_text"><p>Dentro de nuestro pensamiento estratégico, los Valores son el verdadero poder: nos ayudan a aclarar nuestra Misión como organización y como personas; purifican e inspiran nuestra Visión y nos impulsan en cada actividad del desempeño organizacional. Inspirados en el pensamiento del Profesor Augusto Mijares, asumimos como nuestros los ideales de Justicia, el Bien, la Belleza y la Verdad; y los valores de RESPONSABILIDAD SOCIAL, SOLIDARIDAD, CONSTANCIA, CORRESPONSABILIDAD, LIBERTAD, Y FRATERNIDAD.</p></div>
+                </div>
+            </div>
+            <div  class="bottom_container">
+                <div class="general_info1 , general_info">
+                    <div class="general_info1_header" ><h3>RESPONSABILIDAD SOCIAL</h3></div>
+                    <div class="general_info1_text"><p>Estimulamos una actitud madura, consciente y sensible a los problemas de nuestra sociedad, a la vez que adoptamos hábitos, formulamos estrategias y desarrollamos procesos que nos ayudan a minimizar los impactos negativos que podamos generar en el medio ambiente y en la sociedad.</p></div>
+                </div>
+                <div class="general_info2 , general_info">
+                    <div class="general_info2_header" ><h3>FRATERNIDAD</h3></div>
+                    <div class="general_info2_text"><p>Promovemos la unión, tolerancia y respeto a las diferencias entre los miembros que conforman una sociedad, conviviendo y actuando unidos en pos del bien común, y compartiendo sus experiencias de vida.</p></div>
+                </div>
+                <div class="general_info3 , general_info">
+                    <div class="general_info3_header" ><h3>LIBERTAD</h3></div>
+                    <div class="general_info3_text"><p>La asumimos como la capacidad de elegir responsablemente la dirección de nuestras vidas. Implica el conocer y diferenciar entre el bien y el mal y proceder de acuerdo a nuestra conciencia, creencias y aspiraciones.</p></div>
+                </div>
+                <div class="general_info4 , general_info">
+                    <div class="general_info4_header" ><h3>CORRESPONSABILIDAD</h3></div>
+                    <div class="general_info4_text"><p>Participamos conjuntamente con empresas, instituciones, organizaciones e individuos para impulsar iniciativas en pro del desarrollo humano y del desarrollo sustentable de la comunidad.</p></div>
+                </div>
+                <div class="general_info5 , general_info">
+                    <div class="general_info5_header" ><h3>SOLIDARIDAD</h3></div>
+                    <div class="general_info5_text"><p>Actuamos desinteresadamente y con plena de alegría en favor de otras personas, teniendo en cuenta la utilidad y la necesidad del aporte para estas personas.</p></div>
+                </div>
+                <div class="general_info6 , general_info">
+                    <div class="general_info6_header" ><h3>CONSTANCIA</h3></div>
+                    <div class="general_info6_text"><p>Tenemos perseverancia y hacemos esfuerzo constante para alcanzar nuestros objetivos y metas. Comenzamos una y otra vez para corregir errores y superar obstáculos. Se asume lo dicho por Simón Bolívar en el Manifiesto de Cartagena: “(…) el valor, la habilidad y la constancia corrigen la mala fortuna” - Citado por Augusto Mijares en la obra El Libertador.</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="page_footer">
+        <div class="page_footer_text">
+            <hr >
+            <div>Copyright ©2020 All rights reserved | This template is made with<span style="color:#6059f6"> &hearts;</span>	by<span style="color:#6059f6"> DiazApps</span></div>
+        </div>
+        <div class="page_footer_image">
+            <div class="page_footer_image_facebook">
+                <img src="imagen_P1/facebook.png">
+            </div>
+            <div class="page_footer_image_twitter">
+                <img src="imagen_P1/twitter.png"> 
+            </div>
+            <div class="page_footer_image_global">
+                <img src="imagen_P1/global.png">
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
